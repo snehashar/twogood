@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    font-family: 'gilroy-Medium', sans-serif;
+}
+
+*::selection{
+    color: aliceblue;
+    background-color: #000;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#page1 {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    padding: 0 1vw;
+    padding-top: 19vh;
+}
+
+#nav{
+    width: 100%;
+    position:fixed;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    columns: #333;
+    padding: 1vw  2vw;
+    z-index: 99;
+
+}
+#nav img{
+    height: 13vh;
+    width: 7vw;
+
+}
+
+#nav-part1{
+    display: block;
+    
+}
+#nav-part1 img:nth-child(2){
+    visibility: hidden;
+}
+#nav-part1 img{
+    display: block;
+
+}
+#nav #nav-part2  #links a{
+    color: #333;
+    gap: 5vw;
+    text-decoration: none;
+    margin-right: 2vw;
+}
+#nav #nav-part2{
+    gap: 5vw;
+    text-transform: uppercase;
+}
+#nav-part2{
+    display: flex;
+    color: #333;
+}
+ #nav-part2 #icon{
+    gap: 5vw;
+    margin-right: 3vw;
+}
+#nav-part2 #icon i{
+    color: #333;
+    gap:5vw;
+    margin-right: 1vw;
+}
+
+#page1 h1 {
+    font-size: 15vw;
+    font-family: futura;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 13vw;
+    letter-spacing: -0.3vw;
+}
+
+#video-container {
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vw;
+    position: relative;
+}
+
+#video-container video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+#play {
+    background-color: #000;
+    position: absolute;
+    text-transform: uppercase;
+    padding: 3vw 2vw;
+    color: white;
+    z-index: 2;
+    font-size: 2.3vw;
+    border-radius: 50%;
+    align-items: center;
+    font-family: futura;
+    opacity: 0;
+    scale:0;
+}
+#page2{
+    height:100vh;
+    width:100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 1vw;
+    background-color: rgb(247,247,247);
+}
+#page2 .elem{
+    height: 100%;
+    width:30%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#page3 {
+    height: 180vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    color: #000;
+    justify-content: space-evenly;
+}
+
+.fonts {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: black;
+    padding: 5vw;
+}
+#font1{
+    padding:2vw;
+    padding-left:2vw ;
+    margin-left: -3vw;
+}
+#font1 h3 {
+    font-size: 5em; 
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    letter-spacing: -0.5vw;
+    line-height:3.8vw;
+}
+
+#font2 p {
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+}
+
+.child{
+    height: 55vh;
+    width:40vw;
+    padding: 2vw;
+    display: flex;
+    align-items: center;
+    top: 50%;
+}
+.child img{
+    object-fit:fill;
+    height: 100%;
+    width:100%;
+}
+
+
+
+#details{
+    background-color: rgb(248, 232, 214);
+    background: linear-gradient(bisque);
+    position: absolute;
+    z-index: 9;
+    height: 50px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50vw;
+}
+#details:hover{
+    height: 300px;
+
+}
+#details ul li{
+    color: #000;
+}
+#details ul li h6{
+    color:#000;
+}
+#cursor{
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: blanchedalmond;
+    transform: translate(-100%,-50%);
+}
+
+#page4{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(247,247,247);
+    padding: 3vw  10vw;
+    align-items: center;
+    justify-content: space-between;
+
+}
+#page4 h1{
+    font-family: futura;
+    color: #131313;
+    font-size: 4.5em;
+    letter-spacing: -0.4vw;
+    line-height: 4.6vw;
+    text-transform: uppercase;
+
+}
+
+#page4 #writeup{
+    height:50vh;
+    width: 100%;
+    padding: 3vw;
+    align-items: center;
+
+
+}
+
+#page4 #button{
+
+      height: 20vh;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      margin-top: 3vw;
+    
+
+}
+#page4 #button button{
+    background-color: #000;
+    color: aliceblue;
+    height:9vh;
+    width: 21vw;
+    border-radius:50px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+#page4 #button #small h5{
+    color: rgb(78, 76, 76);
+    font-size: 1em;
+}
+#page4 #button #small{
+    margin-top: 1vw;
+    color: rgb(190,190,190);
+    font-weight:2px;
+    font-family: futura;
+}
+#page4 #button button:hover {
+    background-color: #555; 
+    transform: translateY(-5px); 
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.2);
+}
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgb(247,247,247);
+    justify-content: space-between;
+    padding: 2vw;
+}
+#page5 #ourimpact{
+    height: 90vh;
+    width: 30vw;
+}
+#page5 #ourimpact h2{
+    color: #131313;
+    font-size: 3em;
+}
+#page5 #ourimpact p{
+    color: #131313;
+}
+#page5 #ourimpact:nth-child(1){
+    padding: 3vw;
+    display: flex;
+    flex-direction:column ;
+    justify-content: space-evenly;
+    line-height: 2vw;
+    color: #131313;
+}
+#page5 #ourimpact img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#footer{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(247,247,247);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5vw;
+}
+#footer img{
+    height: 30vh;
+}
+
+#footer #iconlelo i{
+    color:#333;
+    size: 20vw;
+    font-size: x-large;
+    letter-spacing: 3vw;
+
+}
+#footer #iconlelo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    width: 100%;
+    margin-top: 2vw;
+}
+#footer h6{
+    color:#555;
+}
+#footer h6 i{
+    color: #333;
+}
+
+#page4, #page5, footer {
+    pointer-events: auto; /* Ensure mouse events can be captured */
+    z-index: auto;         /* Ensure sections don't overlap the cursor */
+}
+#page4, #page5, footer {
+    overflow: visible; /* Ensure mouse events are not blocked */
+    z-index: auto;     /* Ensure no elements overlap the cursor */
+}
+#cursor {
+    position: fixed;
+    z-index: 9999;  /* Higher value ensures it's on top */
+}
+
+
+@media  (max-width:600px){
+    #page1 {
+        min-height: 70vh;
+        position: relative;
+        width: 100%;
+        padding: 2vw 2vw;
+        padding-top: 19vh;
+    }
+    #page1 h1 {
+        font-size: 16.2vw;
+        font-family: futura;
+        text-transform: uppercase;
+        color: #000;
+        line-height: 13vw;
+        letter-spacing: -1vw;
+    }
+    #video-container {
+        height: 34vh;
+        width: 100%;
+        margin-top: 1vw;
+        position: relative;
+        padding: 2vw 3vw;
+        object-fit: cover;
+    }
+    #video-container video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+    }
+    #page2 .elem{
+        height: 100vh;
+        width:100%;
+
+    }
+    #page2{
+        height:100vh;
+        width:100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 9vw 7vw;
+        background-color: rgb(247,247,247);
+    }
+    .elem img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        scale: 1.1;
+    }
+    #play {
+        background-color: #000;
+        position: absolute;
+        padding: 9.5vw 7.2vw;
+        color: white;
+        z-index: 2;
+        font-size: 4.5vw;
+        border-radius: 50%;
+        opacity: 1;
+        scale:1;
+        top:10%;
+        left:10%;
+        transform:translate(-50%,-50%);
+    }
+
+
+
+
+}
